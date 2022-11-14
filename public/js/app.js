@@ -13,7 +13,7 @@ weatherFormEl.addEventListener("submit", (event) => {
 
 const getWeatherInfo = async (location) => {
   const response = await fetch(
-    `http://localhost:3000/weather?location=${location}`
+    `/weather?location=${location}`
   );
   if (!response.ok) {
     return console.log(response.error);
